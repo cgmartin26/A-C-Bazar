@@ -5,13 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tienda Online</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: red;
+            color: black;
+            font-family: Arial, sans-serif;
+        }
+        nav {
+            background-color: black;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+        nav ul li {
+            position: relative;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px;
+            display: block;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: white;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            top: 100%;
+            left: 0;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li a {
+            color: black;
+            padding: 10px;
+            display: block;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Nuestra Tienda</h1>
+        <h1>Bienvenido a A-C Bazar</h1>
         <nav>
             <ul>
-                <li><a href="#productos">Productos</a></li>
+                <li><a href="#productos">Productos</a>
+                    <ul>
+                        <li><a href="#categoria1">Categoría 1</a></li>
+                        <li><a href="#categoria2">Categoría 2</a></li>
+                    </ul>
+                </li>
                 <li><a href="#contacto">Contacto</a></li>
                 <li><a href="#carrito">Carrito</a></li>
             </ul>
